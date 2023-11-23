@@ -1,6 +1,9 @@
 const { Error } = require("sequelize")
 
 class ErrorHelper {
+  static dict = {
+    email: 'E-mail'
+  }
 
   /**
    * 
@@ -9,15 +12,24 @@ class ErrorHelper {
    */
   static compileArray(error, array) {
     let returnArray = []
+    let errorColumns = []
     if (!array) {
       array = returnArray
     }
 
     error.errors.forEach( e => {
-      if (e.message == 'Invalid validator function: unique') {
-        array.push(e.path + ' ini sudah terdaftar')
+      if (errorColumns.find( el => el == e.path)){
+        console.log('line 19')
       } else {
-        array.push(e.message)
+        console.log('masuk else')
+        console.log(errorColumns.push(e.path))
+        console.log(errorColumns)
+
+        if (e.message == 'Invalid validator function: unique') {
+          array.push(this.dict[e.path] + ' ini sudah terdaftar')
+        } else {
+          array.push(e.message)
+        }
       }
     })
 

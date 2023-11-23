@@ -21,48 +21,76 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        notEmpty: 'Judul tidak boleh kosong',
-        notNull: 'Judul tidak boleh kosong'
+        notEmpty: {
+          msg: 'Judul tidak boleh kosong'
+        },
+        notNull: {
+          msg: 'Judul tidak boleh kosong'
+        }
       }
     },
     bahan: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        notEmpty: 'Bahan tidak boleh kosong',
-        notNull: 'Bahan tidak boleh kosong'
+        notEmpty: {
+          msg: 'Bahan tidak boleh kosong'
+        },
+        notNull: {
+          msg: 'Bahan tidak boleh kosong'
+        }
       }
     },
     duration: {
       type: DataTypes.INTEGER,
       allowNull: false,
       validate: {
-        notEmpty: 'Durasi tidak boleh kosong',
-        notNull: 'Durasi tidak boleh kosong'
+        notEmpty: {
+          msg: 'Durasi tidak boleh kosong'
+        },
+        notNull: {
+          msg: 'Durasi tidak boleh kosong'
+        },
+        min: {
+          args: [5],
+          msg: 'Durasi minimal 5'
+        }
       }
     },
     imgUrl: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        notEmpty: 'URL Gambar tidak boleh kosong',
-        notNull: 'URL Gambar tidak boleh kosong'
+        notEmpty: {
+          msg: 'URL gambar tidak boleh kosong'
+        },
+        notNull: {
+          msg: 'URL gambar tidak boleh kosong'
+        }
       }
     },
     idYoutube: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        notEmpty: 'ID Video YouTube tidak boleh kosong',
-        notNull: 'ID Video YouTube tidak boleh kosong'
+        notEmpty: {
+          msg: 'ID YouTube tidak boleh kosong'
+        },
+        notNull: {
+          msg: 'ID YouTube tidak boleh kosong'
+        }
       }
     },
     URL: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        notEmpty: 'URL YouTube tidak boleh kosong',
-        notNull: 'URL YouTube tidak boleh kosong'
+        notEmpty: {
+          msg: 'URL video YouTube tidak boleh kosong'
+        },
+        notNull: {
+          msg: 'URL video YouTube tidak boleh kosong'
+        }
       }
     }
   }, {

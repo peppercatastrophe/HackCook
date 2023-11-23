@@ -20,8 +20,12 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
       allowNull: false,
       validate: {
-        notEmpty: 'ID Profile tidak boleh kosong',
-        notNull: 'ID Profile tidak boleh kosong'
+        notEmpty: {
+          msg: 'ID Profile tidak boleh kosong'
+        },
+        notNull: {
+          msg: 'ID Profile tidak boleh kosong'
+        }
       }
     },
     RecipeId: {

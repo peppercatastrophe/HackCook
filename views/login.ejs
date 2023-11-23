@@ -12,14 +12,20 @@
             padding: 0;
         }
 
-        div {
+        div.container {
             text-align: center;
             margin: 20vh auto;
             max-width: 400px;
-            background-color: #fff;
+            background-color: #ffa500;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
         }
 
         label {
@@ -60,24 +66,24 @@
     </style>
 </head>
 <body>
-    <div>
+    <div class="container">
+        <h1>Login To HackCook</h1>
         <div class="error">
             <% if(error) { %> 
                 <% error.forEach(el => { %>
                     <%= el %> <br>
                 <% })} %>
+            </div>
+            <form action="/login" method="POST">
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" placeholder="Input Your Email"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" placeholder="Input Your Password"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <% if (locals.error) { %>
+                <p><%= error %></p>
+            <% } %>
         </div>
-        <h1>Login To HackCook</h1>
-    <form action="/login" method="POST">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password"><br><br>
-        <input type="submit" value="Submit">
-    </form>
-    <% if (locals.error) { %>
-        <p><%= error %></p>
-    <% } %>
-    </div>
-</body>
-</html> 
+    </body>
+</html>

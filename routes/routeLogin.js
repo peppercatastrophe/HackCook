@@ -1,8 +1,8 @@
-const express = require("express")
-const router = express.Router()
-const controllerLogin = require("../controllers/controllerLogin")
+// const express = require("express")
+// const router = express.Router()
+// const controllerLogin = require("../controllers/controllerLogin")
 
-router.get("/", controllerLogin.loginPage)
-router.get("/add", controllerLogin.loginHandler)
+// router.get("/", controllerLogin.loginPage)
+// router.get("/add", controllerLogin.loginHandler)
 
-module.exports = router
+// module.exports = router

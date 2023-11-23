@@ -11,6 +11,7 @@ class Controller {
 
   static registerPage (req,res) {
     try {
+      
       let {error} = req.query 
       if(error){
           error = error.split(",")
@@ -70,6 +71,40 @@ static async loginHandler(req, res) {
         res.send(err)
     }
 }
+ static async recipe (req,res) {
+  try {
+    
+  } catch (error) {
+
+    res.send(err)
+    
+  }
+ }
+
+ static async recipeList (req,res) {
+  try {
+    
+    res.render('list', { recipes: recipes })
+  } catch (error) {
+    
+  }
+ }
+
+ static async renderRecipe (req,res) {
+  try {
+    res.render ('add')
+  } catch (error) {
+    
+  }
+ }
+
+ static async handlerRecipe  (req,res) {
+  try {
+    
+  } catch (error) {
+    
+  }
+ }
 
 // static async checkAdmin(req, res, next) {
 //   try {

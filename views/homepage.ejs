@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            background-color: #FFEFD5;
             margin: 0;
             padding: 0;
         }
@@ -19,17 +19,17 @@
 
         h1 {
             font-size: 36px;
-            color: orange;
+            color: #D2691E;
         }
 
         h3 {
             font-size: 20px;
-            color: #333;
+            color: #8B4513;
             margin-top: 10px;
         }
 
         button {
-            background-color: #ff0000;
+            background-color: #D2691E;
             color: #fff;
             border: none;
             padding: 10px 20px;
@@ -39,7 +39,7 @@
         }
 
         button:hover {
-            background-color: #dd0000;
+            background-color: #D2691E;
         }
     </style>
 </head>
@@ -47,19 +47,19 @@
     <div>
         <h1>Welcome To HackCook</h1>
         <h3>You can add your recipe to the list and cook them as you like.</h3><br>
-        <!-- <button onclick="document.location.href='/register'">REGISTER</button>
-        <button onclick="document.location.href='/login'">LOGIN</button> -->
+        <button onclick="document.location.href='/register'">REGISTER</button>
+        <button onclick="document.location.href='/login'">LOGIN</button>
     </div>
 
     <!-- Register Form -->
     <div style="margin-top: 50px;">
-        <!-- <button onclick="document.location.href='/'">Back</button>
-        <h1>Register</h1> -->
+        <!-- <button onclick="document.location.href='/'">Back</button> -->
+
         <div class="error">
             <!-- Error messages will be inserted here -->
         </div>
-        <form action="/register" method="post">
-            <!-- <label for="name">Name</label> <br>
+        <!-- <form action="/register" method="post">
+            <label for="name">Name</label> <br>
             <input type="text" id="name" name="name"> <br><br>
             <label for="password">Password</label> <br>
             <input type="password" id="password" name="password"> <br><br>
@@ -72,9 +72,9 @@
                 <option selected disabled>PICK ROLE</option><br>
                 <option value="User">User</option>
                 <option value="Admin">Admin</option>
-            </select> <br><br> -->
+            </select> <br><br>
             <input type="submit" value="Register">
-        </form>
+        </form> -->
 
         <!-- Login Link -->
         <p>Sudah memiliki akun? Masuk di sini! <a href="/login">Login</a></p>

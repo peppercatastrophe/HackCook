@@ -8,8 +8,10 @@ app.set('view engine', 'ejs')
 app.use(express.urlencoded({extended: false}))
 app.use(express.static(__dirname + '/public'))
 
-// app.get('/', Controller.showHomepage)
-app.use("/", routerLogin)
+app.get("/", Controller.showHomepage)
+app.get("/login", Controller.loginPage)
+app.post("/add", Controller.loginHandler)
+// app.use("/", routerLogin)
 
 app.listen(port, () => {
   console.log(`currently listening on port ${port}`)

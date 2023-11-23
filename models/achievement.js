@@ -16,8 +16,22 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Achievement.init({
-    ProfileId: DataTypes.INTEGER,
-    RecipeId: DataTypes.INTEGER
+    ProfileId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        notEmpty: 'ID Profile tidak boleh kosong',
+        notNull: 'ID Profile tidak boleh kosong'
+      }
+    },
+    RecipeId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        notEmpty: 'ID Resep tidak boleh kosong',
+        notNull: 'ID Resep tidak boleh kosong'
+      }
+    }
   }, {
     sequelize,
     modelName: 'Achievement',

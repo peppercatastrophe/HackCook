@@ -16,8 +16,22 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Profile.init({
-    name: DataTypes.STRING,
-    location: DataTypes.STRING
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notEmpty: 'Nama tidak boleh kosong',
+        notNull: 'Nama tidak boleh kosong'
+      }
+    },
+    location: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notEmpty: 'Lokasi tidak boleh kosong',
+        notNull: 'Lokasi tidak boleh kosong'
+      }
+    }
   }, {
     sequelize,
     modelName: 'Profile',

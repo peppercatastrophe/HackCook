@@ -17,12 +17,54 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Recipe.init({
-    title: DataTypes.STRING,
-    bahan: DataTypes.STRING,
-    duration: DataTypes.INTEGER,
-    imgUrl: DataTypes.STRING,
-    idYoutube: DataTypes.STRING,
-    URL: DataTypes.STRING
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notEmpty: 'Judul tidak boleh kosong',
+        notNull: 'Judul tidak boleh kosong'
+      }
+    },
+    bahan: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notEmpty: 'Bahan tidak boleh kosong',
+        notNull: 'Bahan tidak boleh kosong'
+      }
+    },
+    duration: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        notEmpty: 'Durasi tidak boleh kosong',
+        notNull: 'Durasi tidak boleh kosong'
+      }
+    },
+    imgUrl: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notEmpty: 'URL Gambar tidak boleh kosong',
+        notNull: 'URL Gambar tidak boleh kosong'
+      }
+    },
+    idYoutube: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notEmpty: 'ID Video YouTube tidak boleh kosong',
+        notNull: 'ID Video YouTube tidak boleh kosong'
+      }
+    },
+    URL: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notEmpty: 'URL YouTube tidak boleh kosong',
+        notNull: 'URL YouTube tidak boleh kosong'
+      }
+    }
   }, {
     sequelize,
     modelName: 'Recipe',

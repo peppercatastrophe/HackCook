@@ -11,6 +11,8 @@ app.use(express.static(__dirname + '/public'))
 app.get("/", Controller.showHomepage)
 app.get("/login", Controller.loginPage)
 app.post("/add", Controller.loginHandler)
+app.get("/register", Controller.registerPage)
+app.post("/register", Controller.registerHandler)
 // app.use("/", routerLogin)
 
 app.listen(port, () => {

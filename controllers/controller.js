@@ -40,6 +40,43 @@ static async loginHandler(req, res) {
         res.send(err)
     }
 }
+// static registerPage(req, res) {
+//   let {error} = req.query 
+//   if(error){
+//       error = error.split(",")
+//   }
+//   res.render("/register", {error})
+// }
+
+static registerPage (req,res) {
+  try {
+    let {error} = req.query 
+    if(error){
+        error = error.split(",")
+  }
+    res.render("register", {error})
+    
+  } catch (error) {
+    
+  }
+}
+
+static async registerHandler(req, res) {
+  const {name, password, email, role} = req.body
+  try {
+      const profile = await Profile.create({name})
+      const user = await User.create({name, password, email, role, ProfileId: profile.dataValues.id})
+      res.redirect("/login")
+  } catch (err) {
+      if(err.name === "SequelizeValidationError") {
+          const error = err.errors.map(el => el.message)
+          res.redirect(`/register?error=${error}`)
+      }
+      else {
+          res.send(err)
+      }
+  }
+}
 }
 
 module.exports = Controller

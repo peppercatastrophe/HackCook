@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFEFD5;
+            margin: 0;
+            padding: 0;
+        }
+        div.card {
+            text-align: center;
+            margin: 20vh auto;
+            max-width: 400px;
+            background-color: #D2691E;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            background-color: #FFF8DC;
+            padding: 10px;
+            border-radius: 5px;
+            color: #8B4513;
+        }
+        button {
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #dd0000;
+        }
+    </style>
+</head>
+<body>
+
+    <% recipes.forEach(recipe => { %>
+        <div class="card">
+            <img src="<%= recipe.imgUrl %>" alt="<%= recipe.title %>">
+            <h2><%= recipe.title %></h2>
+            <button onclick="document.location.href='/recipe/<%= recipe.id %>'">See Detail</button>
+        </div>
+    <% }) %>
+</body>
+</html>

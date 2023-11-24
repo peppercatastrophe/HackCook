@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "title": "Cara Memasak Rendang",
+        "imgUrl": "https://www.astronauts.id/blog/wp-content/uploads/2023/03/Resep-Rendang-Daging-Sapi-Untuk-Lebaran-Gurih-dan-Nikmat.jpg",
+        "category": "",
+        "idYoutube": "GNfRXKsvG04",
+        "URL": "https://www.youtube.com/watch?v=GNfRXKsvG04&ab_channel=DevinaHermawan",
+        "bahan": "Bahan: 600 gr daging sapi sengkel, potong, 5 siung bawang putih, 7 siung bawang merah, 5 butir kemiri, 8 cabai keriting merah, 2 cabai merah, 3 cm jahe, 80 ml minyak kelapa, 2 batang serai, potong dan geprek, 1 lengkuas, iris dan geprek, 5 lembar daun jeruk purut, 2 lembar daun kunyit, 1 lembar daun pandan, 3 lembar daun salam, 500 ml air, 500 ml santan kental, Rempah kering: 1 sdm ketumbar bubuk, 2 sdt lada putih bubuk, 2 sdt jinten bubuk, ¼ sdt kayu manis bubuk, 1 sdt pala bubuk, 1 sdt bunga lawang bubuk, 1 sdt kapulaga bubuk, 1 sdt cengkeh bubuk, 1 sdt cabai bubuk, Lainnya: ½ sdm garam, 2 sdt gula, 1 sdt kaldu jamur"
+    },
+    {
+        "id": 2,
+        "title": "Cara Memasak Sop Ikan",
+        "imgUrl": "https://www.sasa.co.id/medias/page_medias/sop_ikan_batam.jpg",
+        "category": "",
+        "idYoutube": "HJM8ghq9bic",
+        "URL": "https://www.youtube.com/watch?v=HJM8ghq9bic&ab_channel=CeceromedKitchen",
+        "bahan": "Bahan-bahan sop ikan khas Batam: 4 sdm ebi disangrai dan dihaluskan, 1/2 kg ikan kakap putih, 1 buah jeruk nipis, Sawi asin secukupnya, 7 siung bawang merah, Sedikit minyak goreng untum menggoreng bawang merah, 10 buah tomat ijo ukuran kecil, 1 mangkuk kemangi, 1300 ml air, 1 sdt lada bubuk, 1 sdt kaldu ayam bubuk, 1 sdt garam, 1 sdt gula pasir, 3 sdm kecap asin"
+    },
+    {
+        "id": 3,
+        "title": "Cara Memasak Ikan Bakar",
+        "imgUrl": "https://asset.kompas.com/crops/J0ARoySS4ZFviSelgHTMsxHPNv0=/0x0:1000x667/750x500/data/photo/2020/12/17/5fdb3cd0c1525.jpg",
+        "category": "",
+        "idYoutube": "vHDrbBog2sA",
+        "URL": "https://www.youtube.com/watch?v=vHDrbBog2sA&ab_channel=apinchofsaltbysara",
+        "bahan": "Ingredients: 1kg of any fish, 1 cup shallots, 2 lemongrass, 50 garlic, 50g ginger, 150- 180g dried chilies, 0.5 cup water, 0.5 cup oil + 1 cup of oil, 3-4 tbsp dried shrimp, salt, sugar, 2 tbsp lemon juice"
+    },
+    {
+        "id": 4,
+        "title": "Cara Memasak Ayam Teflon",
+        "imgUrl": "https://cdn1-production-images-kly.akamaized.net/n1lypU5JeX3RrnBxcaKzOF2bFtA=/680x383/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2532383/original/051475700_1544719285-resep-ayam-panggang-teflon.jpg",
+        "category": "",
+        "idYoutube": "CoDFaV_1mVc",
+        "URL": "https://www.youtube.com/watch?v=CoDFaV_1mVc&ab_channel=OliviaTommy",
+        "bahan": "Resep: Ayam: 100 g dada ayam boleh pake paha, 2 garlic, 1/2 sdm kecap asin, 1 sdm saus tiram, 1 tetes minyAk wijen, 1 cubit garam, 1 cubit lada, Total 226 kalori, Sawi putih: 150g sawi putih, 2 garlic, 2 g cabe rawit, 1/4 sdt garam, 1 cubit merica"
+    },
+    {
+        "id": 5,
+        "title": "Cara Memasak Nasi Goreng",
+        "imgUrl": "https://resepkoki.id/wp-content/uploads/2019/06/Resep-Nasi-Goreng-Padang.jpg",
+        "category": "",
+        "idYoutube": "QNp31H0jK5U",
+        "URL": "https://www.youtube.com/watch?v=QNp31H0jK5U&ab_channel=DevinaHermawan",
+        "bahan": "Bahan: 600 gr daging sapi sengkel, potong, 5 siung bawang putih, 7 siung bawang merah, 5 butir kemiri, 8 cabai keriting merah, 2 cabai merah, 3 cm jahe, 80 ml minyak kelapa, 2 batang serai, potong dan geprek, 1 lengkuas, iris dan geprek, 5 lembar daun jeruk purut, 2 lembar daun kunyit, 1 lembar daun pandan, 3 lembar daun salam, 500 ml air, 500 ml santan kental, Rempah kering: 1 sdm ketumbar bubuk, 2 sdt lada putih bubuk, 2 sdt jinten bubuk, ¼ sdt kayu manis bubuk, 1 sdt pala bubuk, 1 sdt bunga lawang bubuk, 1 sdt kapulaga bubuk, 1 sdt cengkeh bubuk, 1 sdt cabai bubuk, Lainnya: ½ sdm garam, 2 sdt gula, 1 sdt kaldu jamur"
+    }
+]

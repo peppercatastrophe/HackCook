@@ -12,7 +12,8 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       this.belongsTo(models.User)
-      this.hasMany(models.Achievement)
+      // this.hasMany(models.Achievement)
+      this.belongsToMany(models.Recipe, { through: 'Achievements' })
     }
   }
   Profile.init({

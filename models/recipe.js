@@ -13,7 +13,8 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       this.belongsTo(models.Category)
       this.belongsTo(models.User)
-      this.hasMany(models.Achievement)
+      // this.hasMany(models.Achievement)
+      this.belongsToMany(models.Profile, { through: 'Achievements' })
     }
   }
   Recipe.init({

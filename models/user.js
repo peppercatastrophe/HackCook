@@ -18,7 +18,8 @@ module.exports = (sequelize, DataTypes) => {
   User.init({
     username: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: true,
+      unique: true
     },
     email: {
       type: DataTypes.STRING,
@@ -29,10 +30,6 @@ module.exports = (sequelize, DataTypes) => {
         },
         notEmpty: {
           msg: 'E-mail tidak boleh kosong'
-        },
-        unique: {
-          arg: true,
-          msg: 'E-mail harus berbeda'
         },
         isEmail: {
           msg: 'Format e-mail salah'

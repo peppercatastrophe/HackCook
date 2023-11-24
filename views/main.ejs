@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
+    <title><%= recipe.title %></title>
     <style>
         body {
             background-color: #FFEFD5;
@@ -31,15 +31,15 @@
 <body>
 
     <h2>HackCook</h2>
-    <h1><%= title %></h1>
-    <img src="<%= imgUrl %>" alt="<%= title %>">
+    <h1><%= recipe.title %></h1>
+    <img src="<%= recipe.imgUrl %>" alt="<%= recipe.title %>">
     <div>
         <h2>Bahan:</h2>
-        <p><%= bahan %></p>
+        <p><%= recipe.bahan %></p>
     </div>
     <div>
         <h2>Video:</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= idYoutube %>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= recipe.idYoutube %>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </body>
 </html>
